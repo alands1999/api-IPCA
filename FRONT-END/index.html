@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de IPCA</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="/index.js" defer></script>
+</head>
+<body>
+    <header><h1>API - Histórico de IPCA</h1></header>
+    <main>
+        <section class="pesquisas">
+
+            <div id="pesquisa" class="container">
+
+                <div >
+                <select name="anoIPCA" id="anoIPCA">
+                    <option>Selecione o ano</option>
+                </select>
+                </div>
+
+                <div>
+                    <input type="text" name="campoPesquisa" id="campoPesquisa" placeholder="Procure por ID">
+                    <button id="botaoPesquisaID" class="botaoPesquisaID"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+            </div>
+
+            <div id="calculoIPCA" class="container-calculadora">
+                <div><h1>Calculadora de reajuste de valor:</h1></div>
+
+                <div class="container-inputs">
+                <input type="number" name="valor" id="valor" placeholder="insira o valor">
+                <input type="number" name="mesInicial" id="mesInicial" placeholder="insira o mês inicial">
+                <input type="number" name="anoInicial" id="anoInicial" placeholder="insira o ano incial">
+                <input type="number" name="mesFinal" id="mesFinal" placeholder="insira o mês final ">
+                <input type="number" name="anoFinal" id="anoFinal" placeholder="insira o ano final">
+                <button id="calcular">Calcular</button>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="sec_resultados"> 
+            <div id="resultados" class="resultados">
+            </div>
+        </section>
+        <footer>
+            <p>Desenvolvido por <span>Alan Dias</span></p>
+        </footer>
+    </main>
+</body>
+</html>
